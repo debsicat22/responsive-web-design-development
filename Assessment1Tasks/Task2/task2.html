@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Movie Website</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Header left section with the website title -->
+        <div class="header-left">
+            <h1>What's On</h1>
+        </div>
+        <!-- Header middle section with a search input -->
+        <div class="header-middle">
+            <input type="text" placeholder="Search...">
+        </div>
+        <!-- Header right section with navigation links -->
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <!-- Navigation links for Movies, TV, Login, and Register -->
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Main content with two columns -->
+        <div class="columns">
+            <!-- Left column with a larger movie frame -->
+            <div class="left-column">
+                <div class="movie-frame bigger-frame">
+                    <!-- Movie 1 information: image, title, description, and more info button -->
+                    <img src="avengers.jpg" alt="Movie 1">
+                    <h2>Avengers: End Game</h2>
+                    <p>With the help of remaining allies, the Avengers must assemble once more...</p>
+                    <button class="more-info1">More Info</button>
+                </div>
+            </div>
+            <!-- Right column with two rows of smaller movie frames -->
+            <div class="right-column">
+                <div class="row">
+                    <!-- Movie 2 information -->
+                    <div class="movie-frame smaller-frame">
+                        <img src="lone-gunmen.jpg" alt="Movie 2">
+                        <h2>The Lone Gunmen</h2>
+                        <p>Investigate the suspicious death of Byers' father...</p>
+                        <button class="more-info">More Info</button>
+                    </div>
+                    <!-- Movie 3 information -->
+                    <div class="movie-frame smaller-frame">
+                        <img src="predators.jpg" alt="Movie 3">
+                        <h2>Predators</h2>
+                        <p>Follows a group of proficient killers who have been abducted...</p>
+                        <button class="more-info">More Info</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Movie 4 information -->
+                    <div class="movie-frame smaller-frame">
+                        <img src="millenium.jpg" alt="Movie 4">
+                        <h2>The Millennium</h2>
+                        <p>Follows an air crash investigator who discovers curiously strange details...</p>
+                        <button class="more-info">More Info</button>
+                    </div>
+                    <!-- Movie 5 information -->
+                    <div class="movie-frame smaller-frame">
+                        <img src="rage.jpg" alt="Movie 5">
+                        <h2>Rage</h2>
+                        <p>After a violent home invasion leaves mild-mannered husband Noah in a coma...</p>
+                        <button class="more-info">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

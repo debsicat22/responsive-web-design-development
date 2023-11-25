@@ -1,0 +1,155 @@
+$Line-1-color: #4e89ae;
+$Line-2-color: #43658b;
+$Line-3-color: #ed6663;
+$Line-4-color: #ffa372;
+$circle-1-width: 70px;
+$circle-1-height: 70px;
+$circle-2-width: 80px;
+$circle-2-height: 80px;
+$circle-3-width: 90px;
+$circle-3-height: 90px;
+$circle-4-width: 100px;
+$circle-4-height: 100px;
+$circle-hover-color: #444;
+$footer-height: 50px;
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+@mixin centerElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin image-size($url, $width, $height) {
+  background-image: url($url);
+  width: $width;
+  height: $height;
+}
+
+.GridLines {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 4;
+}
+
+.circles {
+  @include centerElement;
+  margin: 30px;
+  gap: 16px;
+}
+
+#circle1 {
+  width: $circle-1-width;
+  height: $circle-1-height;
+}
+
+#circle2 {
+  width: $circle-2-width;
+  height: $circle-2-height;
+}
+
+#circle3 {
+  width: $circle-3-width;
+  height: $circle-3-height;
+}
+
+#circle4 {
+  width: $circle-4-width;
+  height: $circle-4-height;
+}
+
+#Line1,
+#circle1 {
+  background-color: $Line-1-color;
+}
+
+#Line2,
+#circle2 {
+  background-color: $Line-2-color;
+}
+
+#Line3,
+#circle3 {
+  background-color: $Line-3-color;
+}
+
+#Line4,
+#circle4 {
+  background-color: $Line-4-color;
+}
+
+.circles div {
+  border-radius: 50%;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+#Line1,
+#Line2,
+#Line3,
+#Line4{
+  height: 52px;
+}
+header,
+footer {
+  background-color: #8ccff7;
+}
+
+#Line1:hover,
+#Line2:hover,
+#Line3:hover,
+#Line4:hover,
+#circle1:hover,
+#circle2:hover,
+#circle3:hover,
+#circle4:hover {
+  background-color: $circle-hover-color;
+  color: $circle-hover-color;
+}
+
+footer {
+  width: 100%;
+  height: $footer-height;
+  bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .Large {
+    @include image-size("400.png", 400px, 400px);
+  }
+  .image {
+    background-color: #8ccff7;
+    @include centerElement;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .Medium {
+    @include image-size("300.png", 300px, 300px);
+  }
+  .image {
+    background-color: #8ccff7;
+    @include centerElement;
+  }
+  .circles {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .Small {
+    @include image-size("200.png", 200px, 200px);
+  }
+  .image {
+    background-color: #8ccff7;
+    @include centerElement;
+  }
+  .circles {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gaming Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the World of Gaming</h1>
+        <nav id="navigation">
+            <button onclick="showGame(1)">Game 1</button>
+            <button onclick="showGame(2)">Game 2</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content" id="game1">
+            <div class="image-carousel">
+                <img src="game1_1.jpg" alt="Game 1 Screenshot 1">
+                <img src="game1_2.jpg" alt="Game 1 Screenshot 2">
+                <img src="game1_3.jpg" alt="Game 1 Screenshot 3">
+            </div>
+            <h2>Game Title 1</h2>
+            <p>Embark on an epic journey in this immersive RPG game. Explore magical worlds, defeat powerful enemies, and uncover ancient secrets.</p>
+            <a href="#" class="button">Play Now</a>
+        </section>
+        
+        <section class="content" id="game2">
+            <div class="image-carousel">
+                <img src="game2_1.jpg" alt="Game 2 Screenshot 1">
+                <img src="game2_2.jpg" alt="Game 2 Screenshot 2">
+                <img src="game2_3.jpg" alt="Game 2 Screenshot 3">
+            </div>
+            <h2>Game Title 2</h2>
+            <p>Battle against friends or AI opponents in this fast-paced multiplayer shooter. Strategize, aim, and dominate the battlefield.</p>
+            <a href="#" class="button">Join the Battle</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gaming Universe</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.cont ul li {
+  background-color: pink;
+  color: blue;
+}
+
+.c1 {
+  background-color: yellow;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  border: 1px;
+}
+
+.c2 {
+  background-color: purple;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  border: 1px;
+}
+
+.c3, .c4 {
+  color: brown;
+  font-family: Arial;
+  font-size: larger;
+  line-height: 5px;
+}
+
+.c4 {
+  color: blueviolet;
+}/*# sourceMappingURL=2.css.map */

@@ -1,0 +1,143 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.GridLines {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 4;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  gap: 16px;
+}
+
+#circle1 {
+  width: 70px;
+  height: 70px;
+}
+
+#circle2 {
+  width: 80px;
+  height: 80px;
+}
+
+#circle3 {
+  width: 90px;
+  height: 90px;
+}
+
+#circle4 {
+  width: 100px;
+  height: 100px;
+}
+
+#Line1,
+#circle1 {
+  background-color: #4e89ae;
+}
+
+#Line2,
+#circle2 {
+  background-color: #43658b;
+}
+
+#Line3,
+#circle3 {
+  background-color: #ed6663;
+}
+
+#Line4,
+#circle4 {
+  background-color: #ffa372;
+}
+
+.circles div {
+  border-radius: 50%;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Line1,
+#Line2,
+#Line3,
+#Line4 {
+  height: 52px;
+}
+
+header,
+footer {
+  background-color: #8ccff7;
+}
+
+#Line1:hover,
+#Line2:hover,
+#Line3:hover,
+#Line4:hover,
+#circle1:hover,
+#circle2:hover,
+#circle3:hover,
+#circle4:hover {
+  background-color: #444;
+  color: #444;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .Large {
+    background-image: url("400.png");
+    width: 400px;
+    height: 400px;
+  }
+  .image {
+    background-color: #8ccff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .Medium {
+    background-image: url("300.png");
+    width: 300px;
+    height: 300px;
+  }
+  .image {
+    background-color: #8ccff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circles {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .Small {
+    background-image: url("200.png");
+    width: 200px;
+    height: 200px;
+  }
+  .image {
+    background-color: #8ccff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circles {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=styles.css.map */

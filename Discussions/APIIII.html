@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+
+</head>
+
+<style>
+    .square {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 0;
+    }
+
+    .square2 {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 0;
+    }
+</style>
+
+<body>
+    <div class="square" style="background-color: blueviolet;"> </div>
+    <div class="square2" style="background-color: pink;"> </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        anime({
+            targets: '.square',
+            easing: 'linear',
+            direction: 'alternate',
+            duration: 1000,
+        }).finished.then(function(){
+            anime({
+                targets: '.square',
+                top: 300,
+                easing: 'linear',
+                duration: 1000,
+            })
+        });
+
+        anime({
+            targets: '.square2',
+            left: 300,
+            duration: 3000,
+            easing: 'linear'
+        })
+
+    </script>
+
+
+
+
+</body>
+
+</html>

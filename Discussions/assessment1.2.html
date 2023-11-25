@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Lines</title>
+    <style>
+        .blue-line {
+            height: 100%;
+            width: 2px;
+            background-color: blue;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        .red-line {
+            height: 2px;
+            width: 100%;
+            background-color: red;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        table {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+
+        td {
+            background-color: #d4e1ff;
+            border: 1px solid green;
+            padding: 15px;
+            width: 150px;
+            text-align: justify;
+            vertical-align: top;
+
+        }
+
+        td:first-child {
+            width: 300px;
+            /* Set width for the first column */
+
+        }
+
+        tr:nth-child(1) td {
+            padding: 50px 50px;
+            /* Different padding for the first row */
+
+        }
+
+        tr:nth-child(2) td {
+            padding: 50px 50px;
+            /* Different padding for the second row */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blue-line"></div>
+    <div class="red-line"></div>
+
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+        <tr>
+            <td>Five</td>
+            <td>Six</td>
+        </tr>
+        <tr>
+            <td>Seven</td>
+            <td>Eight</td>
+        </tr>
+        <tr>
+            <td>Nine</td>
+            <td>Ten</td>
+        </tr>
+        <tr>
+            <td>Eleven</td>
+            <td>Twelve</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+section {
+    width: 33.3%;
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    padding: 10px;
+}
+
+/* Media query for larger mobile resolutions and ipads - portrait */
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    section {
+        width: 50%;
+    }
+}
+
+/* Media query for standard and slightly larger resolution mobile device - portrait */
+@media screen and (max-width: 480px) {
+    section {
+        width: 100%;
+    }
+}

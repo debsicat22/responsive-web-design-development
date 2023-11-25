@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 162, 255);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Center the content in the middle of the header */
+.header-middle {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Style for the search input in the header */
+.header-middle input {
+    width: 20%;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Style for the right side of the header containing navigation links */
+.header-right ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.header-right li {
+    display: inline;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Section Styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Left Column Styles */
+.left-column {
+    width: 40%; /* Adjust the width as needed */
+    float: left;
+    box-sizing: border-box;
+}
+
+/* Right Column Styles */
+.right-column {
+    width: 30%; /* Adjust the width as needed */
+    float: left;
+    box-sizing: border-box;
+    padding: 0 18px; /* Add some padding for spacing */
+}
+
+/* Movie Frame Styles */
+.movie-frame {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styles within Movie Frame */
+.movie-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Button Styles */
+.more-info,
+.more-info1 {
+    background-color: rgb(0, 162, 255);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Float the "More Info" button to the right in larger frames */
+.more-info1 {
+    float: right;
+}
+
+/* Row Styles */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Bigger Frame Styles */
+.bigger-frame {
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+/* Smaller Frame Styles */
+.smaller-frame {
+    width: 48%;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+}
+
+/* Center the columns horizontally */
+.columns {
+    display: flex;
+    justify-content: center;
+}

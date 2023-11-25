@@ -1,0 +1,29 @@
+
+@mixin theme($c:blueviolet){
+    background-color: $c;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 0;
+}
+
+
+
+.square1{
+    @include theme
+}
+.square2{
+    @include theme($c:aqua)
+}
+.square3{
+    @include theme($c:aqua)
+
+}
+.square4{
+    @include theme($c:aqua)
+
+}
+.square5{
+    @include theme($c:aqua)
+
+}

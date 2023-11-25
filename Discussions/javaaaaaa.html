@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(30,30,30);
+        color: rgb(200,200,200);
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+    }
+</style>
+<body>
+    <div id="hello">Hello</div>
+</body>
+<script>
+    var ol = 0;
+        var isPlaying = false;
+        var circleInterval;
+        var el = document.getElementById("hello");
+        var sc = 1;
+        function circleAnimation(time){
+            ol++;
+            sc++;
+
+            el.style.left = ol + "px";
+            el.style.fontSize = sc + "px";
+            circleInterval = requestAnimationFrame(circleAnimation);
+        }
+
+function mouseClicked(){
+    if(isPlaying){
+        isPlaying = false;
+        document.getElementById("hello").style.color = "dimgrey";
+        cancelAnimationFrame(circleInterval);
+    }
+    if (sc == "500px") {
+        stopAnimation();
+    }
+    else{
+        isPlaying = true;
+        document.getElementById("hello").style.color = "crimson";
+        circleInterval = requestAnimationFrame(circleAnimation);
+    }
+}
+document.getElementById("hello").addEventListener("click", mouseClicked);
+document.getElementById("hello").style.color = "dimgrey"; 
+
+</script>
+</html>

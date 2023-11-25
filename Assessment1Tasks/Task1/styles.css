@@ -1,0 +1,100 @@
+/* Global Styles */
+
+/* Apply a basic style to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the header section */
+header {
+    background-color: #ffffff;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Style for the footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Style for the main section */
+main {
+    padding: 20px;
+}
+
+/* Flex container for the image gallery */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for individual images in the gallery */
+.picture {
+    flex-basis: 50%;
+}
+
+/* Ensure images in the gallery take up 100% width */
+.picture img {
+    width: 100%;
+}
+
+/* Style for the logo in the header */
+.logo {
+    margin-right: 1365px; /* Adjust the margin as needed */
+    width: 10; /* This should be a valid unit like '10px' or '10%' */
+}
+
+/* Style for the logo image in the header */
+.logo img {
+    max-height: 100px; 
+    vertical-align: middle;
+}
+
+/* Style for the body text section */
+.bodytext {
+    margin: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Phones */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+
+    /* Change display to inline for small screens */
+    .row {
+        display: inline;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Allow flex items to wrap for medium-sized screens */
+    .row {
+        flex-wrap: wrap; 
+    }
+}
+
+/* Laptops and Desktops */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Use CSS Grid for larger screens with three columns */
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
