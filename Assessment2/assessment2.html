@@ -1,47 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Gaming Website</title>
+    <title>WoG</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to the World of Gaming</h1>
-        <nav id="navigation">
-            <button onclick="showGame(1)">Game 1</button>
-            <button onclick="showGame(2)">Game 2</button>
-        </nav>
+    <header class="container">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="wog.png" alt="World of Gaming Logo">
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showAllGames()">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showGame(1)">Mobile Legends</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showGame(2)">Valorant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showGame(3)">Fortnite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showGame(4)">Apex Legends</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
     </header>
+
+    <section class="introduction">
+        <div class="container">
+            <p>Embark on a journey into the exciting world of gaming. Discover the latest releases, read reviews, and
+                connect with fellow gamers.</p>
+            <p>Whether you're a seasoned player or just starting, Gaming Universe has something for everyone. Join our
+                community and dive into the immersive universe of gaming adventures!</p>
+        </div>
+    </section>
 
     <main>
         <section class="content" id="game1">
-            <div class="image-carousel">
-                <img src="game1_1.jpg" alt="Game 1 Screenshot 1">
-                <img src="game1_2.jpg" alt="Game 1 Screenshot 2">
-                <img src="game1_3.jpg" alt="Game 1 Screenshot 3">
+            <div class="slideshow-container">
+                <img src="mobilelegends1.jpg" alt="Game 1 Screenshot 1">
+                <img src="mobilelegends2.jpg" alt="Game 1 Screenshot 2">
+                <img src="mobilelegends3.jpg" alt="Game 1 Screenshot 3">
             </div>
-            <h2>Game Title 1</h2>
-            <p>Embark on an epic journey in this immersive RPG game. Explore magical worlds, defeat powerful enemies, and uncover ancient secrets.</p>
-            <a href="#" class="button">Play Now</a>
+            <h2>Mobile Legends</h2>
+            <p>Mobile Legends invites you to immerse yourself in a captivating fantasy RPG, where an exhilarating
+                adventure awaits at every turn. Prepare to engage in epic battles against mythical creatures that roam
+                the mystical realms, showcasing your strategic prowess and combat skills. Unravel the mysteries of
+                enchanting landscapes as you embark on a quest to discover hidden treasures and ancient artifacts,
+                adding layers of excitement to your journey.
+                <br><br>
+
+                As you traverse through the fantastical realms, face off against formidable foes and forge alliances
+                with other players to overcome challenging quests. Develop your character into the ultimate legend,
+                mastering unique abilities and unlocking powerful weapons and armor along the way. Customize your hero
+                to reflect your playstyle, whether you prefer a swift and agile rogue or a mighty and resilient warrior.
+                <br><br>
+
+                The world of Mobile Legends is rich with lore and secrets waiting to be unveiled. Immerse yourself in a
+                vibrant and ever-expanding universe, where each encounter brings you closer to becoming a legendary
+                figure in this dynamic RPG. With stunning visuals, engaging storytelling, and thrilling gameplay, Mobile
+                Legends guarantees an unforgettable journey into a realm where fantasy and adventure seamlessly blend to
+                create an extraordinary gaming experience. Embark on this quest, and let the legends unfold before your
+                very eyes.
+            </p>
+            <a href="https://m.mobilelegends.com/en" class="button" target="_blank">Play Now</a>
+            <div class="video-container">
+                <video controls poster="mobilelegends1.jpg">
+                    <source src="mobilelegends4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="rating">
+                <label for="game1-rating">Rating:</label>
+                <input type="range" id="game1-rating" name="game1-rating" min="0" max="5" step="0.1" value="0" />
+                <span id="game1-rating-value">0</span>
+            </div>
         </section>
-        
+
         <section class="content" id="game2">
-            <div class="image-carousel">
-                <img src="game2_1.jpg" alt="Game 2 Screenshot 1">
-                <img src="game2_2.jpg" alt="Game 2 Screenshot 2">
-                <img src="game2_3.jpg" alt="Game 2 Screenshot 3">
+            <div class="slideshow-container">
+                <img src="valorant1.jpg" alt="Game 2 Screenshot 1">
+                <img src="valorant2.jpg" alt="Game 2 Screenshot 2">
+                <img src="valorant3.jpg" alt="Game 2 Screenshot 3">
             </div>
-            <h2>Game Title 2</h2>
-            <p>Battle against friends or AI opponents in this fast-paced multiplayer shooter. Strategize, aim, and dominate the battlefield.</p>
-            <a href="#" class="button">Join the Battle</a>
+            <h2>Valorant</h2>
+            <p>Valorant beckons you to enter a realm of intense and strategic warfare, where every move and decision can
+                be the difference between victory and defeat. Immerse yourself in the heart-pounding action of this
+                competitive shooter that not only demands sharpshooting skills but also challenges your tactical acumen.
+                Form a formidable team with friends and dive headfirst into a world where precision and coordination are
+                the keys to success.
+                <br><br>
+
+                As you step into the shoes of an elite agent, Valorant offers a unique blend of gunplay and strategic
+                abilities that elevate the gameplay to new heights. Each agent possesses distinct skills that, when
+                wielded with precision, can turn the tide of battle. Team synergy is not just a bonus but a necessity,
+                as you collaborate with your allies to outsmart and outmaneuver the opposition.
+                <br><br>
+
+                The world of Valorant is a dynamic battleground where adaptability is paramount. Whether you're
+                breaching enemy lines with calculated aggression or holding down strategic positions with expert
+                marksmanship, every match is a test of skill and strategy. Engage in thrilling firefights, outwit your
+                opponents, and showcase your prowess as you ascend the ranks in this fiercely competitive arena.
+                <br><br>
+
+                Beyond the adrenaline-fueled clashes, Valorant also fosters a vibrant community of players who share the
+                passion for tactical excellence. Explore a world where esports and competitive gaming flourish, with
+                tournaments and events that further fuel the excitement and camaraderie among players.
+                <br><br>
+
+                In Valorant, the journey to conquer the world is not just about individual skill; it's about the synergy
+                of a well-coordinated team, the mastery of unique abilities, and the thrill of outsmarting your
+                adversaries. Brace yourself for an immersive experience where every match is a chance to prove your
+                mettle and cement your legacy in the gripping world of Valorant.
+            </p>
+            <a href="https://www.playvalorant.com" class="button" target="_blank">Join the Battle</a>
+            <div class="video-container">
+                <video controls poster="valorant1.jpg">
+                    <source src="valorant4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="rating">
+                <label for="game2-rating">Rating:</label>
+                <input type="range" id="game2-rating" name="game2-rating" min="0" max="5" step="0.1" value="0" />
+                <span id="game2-rating-value">0</span>
+            </div>
+        </section>
+
+        <section class="content" id="game3">
+            <div class="slideshow-container">
+                <img src="fortnite1.jpg" alt="Game 3 Screenshot 1">
+                <img src="fortnite2.jpg" alt="Game 3 Screenshot 2">
+                <img src="fortnite3.jpg" alt="Game 3 Screenshot 3">
+            </div>
+            <h2>Fortnite</h2>
+            <p>Dive headfirst into the exhilarating universe of Fortnite, where an action-packed battle royale
+                extravaganza unfolds at every corner. This vibrant and dynamic game invites you to a world where
+                survival is the ultimate goal, and every match promises an adrenaline-fueled experience like no other.
+                <br><br>
+
+                In Fortnite, the game's essence lies in the seamless fusion of two critical elements: building and
+                combat. As you parachute onto the ever-changing island, the ability to construct structures on-the-fly
+                becomes your strategic advantage. Transform the landscape with ramps, walls, and towers in the blink of
+                an eye, creating both defenses and vantage points that can turn the tide of battle. Your creativity and
+                speed in building are just as crucial as your marksmanship.
+                <br><br>
+
+                Engage in fierce combat with a diverse array of opponents, each with their own playstyles and tactics.
+                The fast-paced battles demand not only accurate shooting skills but also quick thinking and
+                adaptability. Explore the map's various terrains, from dense urban areas to open landscapes, and use the
+                environment to your advantage.
+                <br><br>
+
+                Survival in Fortnite is not just about being the last one standing; it's about resourcefulness and
+                strategy. Loot the landscape for weapons, ammunition, and valuable items to enhance your chances of
+                success. Keep an eye on the ever-shrinking play area, forcing encounters that intensify as the match
+                progresses.
+                <br><br>
+
+                Fortnite is not just a game; it's a social phenomenon. Team up with friends or make new allies in the
+                heat of battle, fostering a sense of camaraderie that extends beyond the digital realm. The game's
+                constantly evolving narrative and seasonal updates ensure that each return to the island brings fresh
+                challenges, weapons, and surprises, keeping the experience exciting and unpredictable.
+                <br><br>
+
+                Whether you prefer the thrill of solo play or the camaraderie of squad-based adventures, Fortnite offers
+                a dynamic and ever-expanding world where your survival instincts, building prowess, and combat skills
+                are put to the test. Jump into the chaos, build your way to victory, and strive to be the last one
+                standing in this unparalleled battle royale phenomenon.
+            </p>
+            <a href="https://www.epicgames.com/fortnite/en-US/home" class="button" target="_blank">Play Now</a>
+            <div class="video-container">
+                <video controls poster="fortnite1.jpg">
+                    <source src="fortnite4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="rating">
+                <label for="game3-rating">Rating:</label>
+                <input type="range" id="game3-rating" name="game3-rating" min="0" max="5" step="0.1" value="0" />
+                <span id="game3-rating-value">0</span>
+            </div>
+        </section>
+
+        <section class="content" id="game4">
+            <div class="slideshow-container">
+                <img src="apex1.jpg" alt="Game 4 Screenshot 1">
+                <img src="apex2.jpg" alt="Game 4 Screenshot 2">
+                <img src="apex3.jpg" alt="Game 4 Screenshot 3">
+            </div>
+            <h2>Apex Legends</h2>
+            <p>Embark on an electrifying journey within the adrenaline-charged realm of Apex Legends, where the thrill
+                of battle royale takes center stage. This fast-paced and dynamic game beckons you to immerse yourself in
+                a world where strategic prowess, diverse legends, and team coordination define the path to victory.
+                <br><br>
+
+                At the heart of Apex Legends is the pivotal choice of your legend, each possessing unique abilities that
+                can shift the tide of battle. Whether you opt for the defensive prowess of Gibraltar, the tactical
+                cunning of Wraith, or the tracking skills of Bloodhound, your legend becomes the cornerstone of your
+                team's strategy. This diversity encourages dynamic squad compositions, fostering an environment where
+                cooperation and adaptability are paramount.
+                <br><br>
+
+                In the ever-evolving landscapes of Apex Legends, your journey begins with a skydive onto the map,
+                creating an immediate sense of urgency and excitement. As you and your squad navigate through diverse
+                environments—from urban sprawls to untamed wilderness—be prepared to uncover hidden loot, discover
+                powerful weapons, and equip your legend with the tools needed to outsmart the competition.
+                <br><br>
+
+                Apex Legends is not just about individual skill; it's about synergy and coordination within your squad.
+                Strategically deploy your legend's abilities, communicate with your teammates, and make split-second
+                decisions to outmaneuver your opponents. The game's innovative ping system facilitates seamless
+                communication, allowing for strategic coordination even without vocal communication.
+                <br><br>
+
+                As the match progresses, the intense competition is heightened by the encroaching ring, forcing
+                strategic movements and confrontations. Dynamic gameplay elements, such as jump towers and supply ships,
+                add layers of complexity, ensuring that no two matches are alike.
+                <br><br>
+
+                Beyond the exhilarating gameplay, Apex Legends stands out for its narrative depth and evolving lore. The
+                game introduces a diverse cast of characters, each with their own backgrounds and motivations, weaving a
+                rich tapestry that keeps players engaged and invested in the ever-expanding Apex Games universe.
+                <br><br>
+
+                Whether you're a seasoned player seeking intense firefights or a newcomer looking for a thrilling
+                introduction to battle royale, Apex Legends promises an experience that combines strategic depth,
+                heart-pounding action, and a sense of camaraderie as you and your squad strive to emerge as champions in
+                this electrifying, fast-paced battle royale spectacle.
+            </p>
+            <a href="https://www.ea.com/games/apex-legends" class="button" target="_blank">Play Now</a>
+            <div class="video-container">
+                <video controls poster="apex1.jpg">
+                    <source src="apex4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="rating">
+                <label for="game4-rating">Rating:</label>
+                <input type="range" id="game4-rating" name="game4-rating" min="0" max="5" step="0.1" value="0" />
+                <span id="game4-rating-value">0</span>
+            </div>
         </section>
     </main>
 
+    <section class="about">
+        <div class="container">
+            <h2>About This Website</h2>
+            <p>Welcome to Gaming Universe, your ultimate destination for gaming adventures! Explore a diverse collection
+                of
+                games, discover new releases, and connect with a vibrant gaming community.</p>
+            <p>Our mission is to provide a platform where gamers can find the latest information, share their
+                experiences,
+                and immerse themselves in the thrilling world of gaming.</p>
+            <p>Feel free to explore our featured games, read reviews, and engage with fellow gamers. Whether you're a
+                casual player or a hardcore enthusiast, Gaming Universe has something for everyone.</p>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2023 Gaming Universe</p>
+        <p>&copy; 2023 World of Gaming</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 </body>
+
 </html>

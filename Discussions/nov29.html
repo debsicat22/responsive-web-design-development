@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elastic</title>
+</head>
+
+<style>
+
+    .square, .square2, .square3, .square4, .square5, .square6, .square7{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 0;
+        border-radius: 100%;
+    }
+
+
+
+        
+</style>
+<body>
+    <div class="square" style="background-color: blueviolet;"></div>
+    <div class="square2" style="background-color: lightblue;"></div>    
+    <div class="square3" style="background-color: peachpuff;"></div>
+    <div class="square4" style="background-color: blue;"></div>
+    <div class="square5" style="background-color: violet;"></div>    
+    <div class="square6" style="background-color: red;"></div>
+    <div class="square7" style="background-color: orange;"></div>
+    <br>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        anime({
+            targets: '.square',
+            left: 400,
+            duration: 6000,
+            easing: 'spring',
+            loop: true
+        })
+        anime({
+            targets: '.square2',
+            left: 400,
+            duration: 6000,
+            easing: 'easeOutBounce',
+            loop: true
+        })
+        anime({
+            targets: '.square3',
+            left: 400,
+            duration: 6000,
+            easing: 'easeOutElastic(1.3,0.5)',
+            
+            loop: true
+        })
+        anime({
+            targets: '.square4',
+            left: 400,
+            duration: 6000,
+            easing: 'easeOutElastic(1.4,0.5)',
+            loop: true
+        })
+        anime({
+            targets: '.square5',
+            left: 400,
+            duration: 6000,
+            easing: 'easeOutElastic(1.5,0.5)',
+            loop: true
+        })
+        anime({
+            targets: '.square6',
+            left: 400,
+            duration: 6000,
+            easing: 'easeOutElastic(1.6,0.5)',
+            loop: true
+        })
+        anime({
+            targets: '.square7',
+            left: 400,
+            duration: 6000,
+            easing: 'easeOutElastic(1.7,0.5)',
+            loop: true
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 56px;
+    background-color: #1e1e1e;
+    color: #fff;
+
+    background-image: url('backgrounddds.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: moveBackground 60s linear infinite;
+}
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+
+    .logo-container {
+        margin-right: 20px; 
+
+        img {
+            max-width: 100%; 
+            height: auto; 
+        }
+    }
+
+}
+
+header {
+    color: #00aaff;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+.introduction {
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+
+    h2 {
+        color: #00aaff;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+}
+
+.about {
+    color: #fff;
+    padding: 20px;
+
+    h2 {
+        color: #ffcc00;
+    }
+}
+
+.navbar {
+
+    .navbar-brand {
+        color: #00aaff;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: #ccc;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: #00aaff;
+            }
+        }
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    button {
+        margin: 0 10px;
+        padding: 8px 12px;
+        background-color: #00aaff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: #0088cc;
+        }
+    }
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+
+.content {
+    background-color: #2c2c2c;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+
+    h2 {
+        color: #00aaff;
+    }
+
+    p {
+        color: #ccc;
+    }
+
+    .slideshow-container {
+        display: flex;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            transition: opacity 0.5s;
+            display: none;
+        }
+    }
+
+    .video-container {
+        margin-top: 20px;
+        max-width: 100%;
+
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #00aaff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+
+        &:hover {
+            background-color: #0088cc;
+        }
+    }
+}
+
+footer {
+    background-color: #2c2c2c;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.rating {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+    label {
+        margin-right: 10px;
+    }
+
+    input {
+        width: 100px;
+    }
+}
+
+
+// Media queries for responsive design
+
+//Phone
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    nav {
+        flex-direction: column;
+
+        button {
+            margin-bottom: 10px;
+        }
+    }
+
+    .slideshow-container {
+        img {
+            margin-right: 5px;
+        }
+    }
+}
+
+//Tablet
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    main {
+        padding: 0 10px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .button {
+        font-size: 0.9em;
+    }
+
+    .slideshow-container {
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+//Laptop
+@media screen and (min-width: 1024px) {
+    footer {
+        font-size: 0.9em;
+        margin-top: 20px;
+    }
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
